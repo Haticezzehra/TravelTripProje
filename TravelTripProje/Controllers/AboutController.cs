@@ -3,23 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TravelTripProje.Models.Siniflar;
 
 namespace TravelTripProje.Controllers
 {
-    public class HomeController : Controller
+    public class AboutController : Controller
     {
+        Context c=new Context();
+        // GET: About
         public ActionResult Index()
         {
-            return View();
-        }
+            var deger = c.Hakkizmida.ToList();
 
-      
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return View(deger);
         }
     }
 }
