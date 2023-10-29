@@ -19,8 +19,8 @@ namespace TravelTripProje.Controllers
         }
         public ActionResult BlogDetay(int id)
         {
-         
-            return View();
+            var blog = c.Blogs.Where(x => x.ID == id).ToList();
+            return View(blog);
         }
     }
 }
