@@ -136,6 +136,10 @@
     <Compile Include="Migrations\202310281635582_mig1.Designer.cs">
       <DependentUpon>202310281635582_mig1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202310291049108_mig11.cs" />
+    <Compile Include="Migrations\202310291049108_mig11.Designer.cs">
+      <DependentUpon>202310291049108_mig11.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
     <Compile Include="Models\Siniflar\Adres.cs" />
@@ -262,6 +266,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202310281635582_mig1.resx">
       <DependentUpon>202310281635582_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202310291049108_mig11.resx">
+      <DependentUpon>202310291049108_mig11.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

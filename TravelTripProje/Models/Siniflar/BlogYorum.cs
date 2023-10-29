@@ -9,5 +9,6 @@ namespace TravelTripProje.Models.Siniflar
     {
         public IEnumerable<Blog> Blog { get; set; }
         public IEnumerable<Yorumlar> Yorum {get;set;}
+        public IEnumerable<Blog> Son3Blog { get; set; }
     }
 }
