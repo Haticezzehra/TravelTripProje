@@ -8,7 +8,7 @@ using TravelTripProje.Models.Siniflar;
 
 namespace TravelTripProje.Controllers
 {
-   
+
     public class HomeController : Controller
     {
         Context c = new Context();
@@ -18,14 +18,26 @@ namespace TravelTripProje.Controllers
             return View(degerler);
         }
 
-      
+
         public PartialViewResult Partial1()
         {
-            return PartialView();
+            var deger = c.Blogs.OrderByDescending(x => x.ID).Take(2).ToList();
+
+            return PartialView(deger);
+        }
+        public PartialViewResult Partial2()
+        {
+            var deger = c.Blogs.Where(X => X.ID == 9).ToList();
+            return PartialView(deger);
+        }
+        public PartialViewResult Partial3()
+        {
+            var deger = c.Blogs.ToList();
+            return PartialView(deger);
         }
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+
 
             return View();
         }
