@@ -250,6 +250,7 @@
     <Content Include="Views\Home\Partial2.cshtml" />
     <Content Include="Views\Home\Partial3.cshtml" />
     <Content Include="Views\Home\Partial4.cshtml" />
+    <Content Include="Views\Home\Partial5.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
