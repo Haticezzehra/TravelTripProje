@@ -141,6 +141,14 @@
     <Compile Include="Migrations\202310291049108_mig11.Designer.cs">
       <DependentUpon>202310291049108_mig11.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202311071914502_YourMigrationName.cs" />
+    <Compile Include="Migrations\202311071914502_YourMigrationName.Designer.cs">
+      <DependentUpon>202311071914502_YourMigrationName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311071934364_Mig.cs" />
+    <Compile Include="Migrations\202311071934364_Mig.Designer.cs">
+      <DependentUpon>202311071934364_Mig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
     <Compile Include="Models\Siniflar\Adres.cs" />
@@ -254,6 +262,7 @@
     <Content Include="Views\Home\Partial5.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\YeniBlog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -277,6 +286,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202310291049108_mig11.resx">
       <DependentUpon>202310291049108_mig11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311071914502_YourMigrationName.resx">
+      <DependentUpon>202311071914502_YourMigrationName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311071934364_Mig.resx">
+      <DependentUpon>202311071934364_Mig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

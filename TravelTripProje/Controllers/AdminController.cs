@@ -16,5 +16,20 @@ namespace TravelTripProje.Controllers
             var deger = c.Blogs.ToList();
             return View(deger);
         }
+        //Kaydetme Sayfamızı açtığımız zaman açılacak sayfaya yönlendirme
+        [HttpGet]
+        public ActionResult YeniBlog()
+        {
+            return View();
+        }
+
+        //Kaydetme işlemi yapacağımız zaman kullanırız
+        [HttpPost]
+        public ActionResult YeniBlog(Blog p)
+        {
+            c.Blogs.Add(p);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
