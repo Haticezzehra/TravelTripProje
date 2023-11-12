@@ -22,22 +22,28 @@ namespace TravelTripProje.Controllers
             BlogYorum blogYorum = new BlogYorum();
             blogYorum.Blog = c.Blogs.Where(x => x.ID == id).ToList();
             //ID değerine göre descending olarak sıralama
-            blogYorum.Son3Blog=c.Blogs.OrderByDescending(x => x.ID).Take(3).ToList(); 
+            blogYorum.Son3Blog = c.Blogs.OrderByDescending(x => x.ID).Take(3).ToList();
             blogYorum.Yorum = c.Yorumlar.Where(x => x.BlogID == id);
             return View(blogYorum);
         }
         public ActionResult BlogGuncelle(Blog b)
         {
             var blog = c.Blogs.Find(b.ID);
-            blog.Aciklama=b.Aciklama;
+            blog.Aciklama = b.Aciklama;
             blog.Baslik = b.Baslik;
-            blog.BlogImage= b.BlogImage;
+            blog.BlogImage = b.BlogImage;
             blog.Tarih = b.Tarih;
             c.SaveChanges();
             return RedirectToAction("Index");
         }
 
-        
+        //Bu id sayfaya taşınan id değerini alıyor.
+        [HttpGet]
+        public PartialViewResult YorumYap(int id)
+        {
+            ViewBag.deger = id;
+            return PartialView();
+        }
         [HttpPost]
         public PartialViewResult YorumYap(Yorumlar yorum)
         {
