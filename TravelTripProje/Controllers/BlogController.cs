@@ -26,5 +26,24 @@ namespace TravelTripProje.Controllers
             blogYorum.Yorum = c.Yorumlar.Where(x => x.BlogID == id);
             return View(blogYorum);
         }
+        public ActionResult BlogGuncelle(Blog b)
+        {
+            var blog = c.Blogs.Find(b.ID);
+            blog.Aciklama=b.Aciklama;
+            blog.Baslik = b.Baslik;
+            blog.BlogImage= b.BlogImage;
+            blog.Tarih = b.Tarih;
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        
+        [HttpPost]
+        public PartialViewResult YorumYap(Yorumlar yorum)
+        {
+            c.Yorumlar.Add(yorum);
+            c.SaveChanges();
+            return PartialView("Index");
+        }
     }
 }
