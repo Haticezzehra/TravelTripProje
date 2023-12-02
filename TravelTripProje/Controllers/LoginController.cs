@@ -37,6 +37,11 @@ namespace TravelTripProje.Controllers
             }
            
         }
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login", "Login");
+        }
 
     }
 }
