@@ -233,7 +233,7 @@
     <Content Include="web\js\jquery.min.js" />
     <Content Include="web\js\responsiveslides.min.js" />
     <Content Include="web\w3layouts-License.txt" />
-    <Content Include="Bacup Dosyası\TravelllDB.bak" />
+    <Content Include="Bacup File\TravelllDB.bak" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
