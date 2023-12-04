@@ -1,4 +1,6 @@
-TravelTripProje Web Site
+<h1> TravelTripProje Web Site</h1>
+#  This is a holiday travel website project. Below are some screenshots of the project.
+
 ![1](https://github.com/Haticezzehra/TravelTripProje/assets/59150986/8ae3f1df-3a6c-4773-bfa9-335774a79720)
 ![2](https://github.com/Haticezzehra/TravelTripProje/assets/59150986/5292ad23-8f6d-425a-b254-c9ed46801b48)
 
