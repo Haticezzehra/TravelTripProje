@@ -10,7 +10,7 @@
 {
 
     @Html.LabelFor(x => x.ID)
-    @Html.TextBoxFor(x => x.ID, , new { @class = "form-control" ,@readonly="readonly"})
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" ,@readonly="readonly"})
     <br />
     @Html.LabelFor(x => x.Baslik)
     @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
